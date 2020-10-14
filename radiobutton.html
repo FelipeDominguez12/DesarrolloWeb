@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git VSCode</title>
+</head>
+<body>
+    <input type="radio" value="si" name="pregunta" id="pregunta_si" onclick="Seleccion()"/> Si
+    <input type="radio" value="no" name="pregunta" id="pregunta_no" onclick="Seleccion()"/> No
+    <input type="radio" value="nsnc" name="pregunta" id="pregunta_nsnc" onclick="Seleccion()"/> NS/NC
+    
+    <script type="text/javascript">
+        function Seleccion(){
+            var elementos = document.getElementsByName("pregunta");
+
+            for(var i=0; i<elementos.length; i++){
+                if(elementos[i].checked){
+                    alert("Elemento: "+ elementos[i].value + "\n Seleccionado " + elementos[i].checked);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
