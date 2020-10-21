@@ -5,15 +5,30 @@
     <meta title="author" content="Felipe de Jesus Dominguez Hernandez">
     <meta title="Description" content="Matriz de identidad">
     <meta name="Keys" content="Matriz, Arreglos">
-    <title>Ejercicio 1</title>
-    <script type="text/javascript">
-    var a = new Array(3);
-    function producto(){
-
-    }
-    </script>
+    <title>Ejercicio 1 - Matriz de Identidad</title>
+    <script src="arreglos.js"></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
-    
+<body style="text-align: center;">
+    <div class="container">
+        <h1 id="titulo"> Matriz de Identidad </h1>
+        <p id="subtitulo"> Seleccione el <strong>tamaño</strong> de la Matriz NxN </p>
+        <select name="seleccionar" id="slc" onchange="generarMatriz();">
+            <option value="" selected>Seleccionar</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <table style="width: 100%;" id="tabla"> </table>
+        <br>
+        <br>
+        <input type="button" id="btnReload" class="borrar" value="Limpiar" onclick="location.reload();">
+    </div>
 </body>
 </html>
