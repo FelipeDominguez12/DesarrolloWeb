@@ -1,0 +1,14 @@
+#tabla{
+    text-align: center;
+    border: thin solid;
+    margin: 0 auto;
+}
+tr,td{
+    border: thin solid;
+    text-align: center;
+    padding: 2px 5px;
+    background-color: rosybrown;
+}
+td:nth-of-type(2), td:nth-of-type(4){
+    text-align: center;
+}
