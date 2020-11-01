@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="author" content="Felipe de Jesus Dominguez Hernandez">
+    <meta title="Description" content="Matriz de identidad">
+    <meta name="Keys" content="Formulario, validaciones">
+    <title>Validación de Formularios</title>
+    <script src="validacion.js"></script>
+    <style>
+        div{
+            text-transform: uppercase;
+        }
+        label{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <p>
+            Ingresa tu RFC:
+            <label>*</label>
+            <br>
+            (Solo Mayúsculas)<br><br>
+            <input type="text" name="rfc" id="txtRFC" required>
+        </p>
+        <input type="reset" value="Limpiar Campos">
+        <p>
+            Introduzca Identificadores de JavaScript:
+            <br>
+            <textarea name="mensaje" id="txtMensaje" cols="30" rows="10"></textarea>
+        </p>
+        <input type="button" value="Recargar" onclick="location.reload();">
+        <input type="button" value="Enviar" onclick="validar();">
+    </form>
+    <div id="Resultado"></div>
+</body>
+</html>
