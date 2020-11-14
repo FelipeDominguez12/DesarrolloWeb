@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen DOM</title>
+    <link rel="stylesheet" href="cssExamen.css">
+    <script src="datosExamen.js"></script>
+
+</head>
+<body>
+    <form action="form1">
+        <p id="titulo">Usando DOM y Formularios</p>
+        <p id="nombre">
+            Nombre:
+            <label id="lblNombre"></label>
+        </p>
+        
+        <p id="nControl">
+            Numero de Control:
+            <label id="lblControl"></label>
+        </p>
+    </form>
+
+    <center>
+        <div class="division">
+            <form action="form2">
+                <p>
+                    Personajes Favoritos
+                    <br>
+                    <br>
+                    <input type="text" name="personajes" id="txtPersonajes">
+                    <br>
+                    <table id="tblPersonajesFavoritos"></table>
+                </p>
+            </form>
+            <input type="button" value="Insertar Personaje" onclick="personajes();">
+        </div>
+    </center>
+    
+    <form action="form3">
+        <p>Películas Favoritas</p>
+        <input type="text" name="numero" id="txtNumero">
+        <input type="button" value="Eliminar" onclick="eliminarPelicula();">
+        <ol id="listas"></ol>
+    </form>
+
+</body>
+</html>

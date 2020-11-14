@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+form, div{
+    background-color: gray;
+}
+label,li{
+    font-style: oblique;
+    color: red;
+}
+tr,ol{
+    background-color: turquoise;
+}
+th{
+    color:darkslateblue;
+}
